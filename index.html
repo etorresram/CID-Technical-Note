@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ocupaciones, habilidades y exposición a la IA en los sectores exportadores dinámicos</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="description" content="Contraparte laboral de la Nota Técnica sobre exportaciones y cadenas de valor en México y Centroamérica.">
+<style>
+:root{
+  --papel:#fcfcfb; --tinta:#1c1c1a; --gris:#6b6a64; --regla:#e5e4df;
+  --aumentar:#1baf7a; --sustituir:#4a3aa7; --realce:#f4f4f1;
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--papel:#17181b;--tinta:#e8e6e0;--gris:#9a9890;--regla:#2b2d32;
+        --aumentar:#2fc78e;--sustituir:#8878e8;--realce:#1e2024;}
+}
+:root[data-theme="dark"]{--papel:#17181b;--tinta:#e8e6e0;--gris:#9a9890;--regla:#2b2d32;
+  --aumentar:#2fc78e;--sustituir:#8878e8;--realce:#1e2024;}
+:root[data-theme="light"]{--papel:#fcfcfb;--tinta:#1c1c1a;--gris:#6b6a64;--regla:#e5e4df;
+  --aumentar:#1baf7a;--sustituir:#4a3aa7;--realce:#f4f4f1;}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--sans);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+
+.eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gris)}
+
+/* ---------- encabezado ---------- */
+header{border-bottom:1px solid var(--regla);padding:clamp(2.5rem,6vw,4.5rem) 0}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,3.1rem);
+  line-height:1.12;margin:.7rem 0 0;text-wrap:balance;max-width:20ch}
+.bajada{max-width:62ch;margin:1.4rem 0 0;color:var(--gris);font-size:1.05rem}
+.meta{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2rem;
+  font-family:var(--mono);font-size:.72rem;color:var(--gris);
+  letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.meta b{color:var(--tinta);font-weight:600}
+
+/* ---------- estructura ---------- */
+.cols{display:grid;grid-template-columns:210px 1fr;gap:clamp(2rem,5vw,4.5rem);
+  align-items:start;padding:3.5rem 0 5rem}
+nav{position:sticky;top:2rem}
+nav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.85rem}
+nav a{display:grid;grid-template-columns:1.6rem 1fr;gap:.5rem;text-decoration:none;
+  font-size:.83rem;line-height:1.35;color:var(--gris);
+  border-left:2px solid var(--regla);padding:.15rem 0 .15rem .7rem;transition:color .15s}
+nav a:hover,nav a:focus-visible{color:var(--tinta);border-left-color:var(--aumentar)}
+nav a span:first-child{font-family:var(--mono);font-size:.72rem;color:var(--aumentar)}
+nav .aparte{margin-top:1.2rem;border-top:1px solid var(--regla);padding-top:1.2rem}
+
+main{min-width:0;display:flex;flex-direction:column;gap:4.5rem}
+
+/* ---------- panel de la medida ---------- */
+.medida{background:var(--realce);border:1px solid var(--regla);border-radius:3px;
+  padding:1.6rem 1.8rem}
+.medida h2{font-family:var(--serif);font-size:1.25rem;margin:.5rem 0 1rem;font-weight:600}
+.par{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}
+.par > div{border-top:3px solid;padding-top:.8rem}
+.par .a{border-color:var(--sustituir)}
+.par .b{border-color:var(--aumentar)}
+.par dt{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;font-weight:700}
+.par .a dt{color:var(--sustituir)}
+.par .b dt{color:var(--aumentar)}
+.par dd{margin:.35rem 0 0;font-size:.92rem;color:var(--gris)}
+
+/* ---------- hallazgos ---------- */
+.hallazgo h2{font-family:var(--serif);font-weight:600;line-height:1.2;
+  font-size:clamp(1.4rem,2.5vw,1.95rem);margin:.55rem 0 0;text-wrap:balance;max-width:26ch}
+.hallazgo p{max-width:66ch;margin:1rem 0 0}
+.cifras{display:flex;flex-wrap:wrap;gap:2.2rem;margin:1.8rem 0 0;
+  padding:1.1rem 0;border-top:1px solid var(--regla);border-bottom:1px solid var(--regla)}
+.cifra{min-width:0}
+.cifra b{display:block;font-family:var(--serif);font-size:1.85rem;line-height:1;
+  font-variant-numeric:tabular-nums;font-weight:600}
+.cifra span{display:block;margin-top:.4rem;font-size:.78rem;color:var(--gris);max-width:22ch}
+.cifra.verde b{color:var(--aumentar)}
+.cifra.morado b{color:var(--sustituir)}
+figure{margin:2rem 0 0}
+figure img{border:1px solid var(--regla);border-radius:2px;background:#fff}
+figcaption{margin-top:.7rem;font-size:.78rem;color:var(--gris);max-width:78ch}
+
+/* ---------- secundarias ---------- */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+.grid2 figure{margin:0}
+details{border-top:1px solid var(--regla);padding-top:1.2rem}
+details summary{cursor:pointer;font-family:var(--mono);font-size:.72rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--gris)}
+details summary:focus-visible{outline:2px solid var(--aumentar);outline-offset:3px}
+details[open] summary{margin-bottom:1.6rem;color:var(--tinta)}
+
+/* ---------- límites y pie ---------- */
+.limites ul{max-width:70ch;padding-left:1.1rem;margin:1rem 0 0}
+.limites li{margin-bottom:.7rem}
+footer{border-top:1px solid var(--regla);padding:2.5rem 0 4rem;
+  font-size:.82rem;color:var(--gris)}
+footer p{max-width:74ch}
+code{font-family:var(--mono);font-size:.85em;background:var(--realce);
+  padding:.1em .35em;border-radius:2px}
+
+.tabla{overflow-x:auto;margin-top:1.4rem}
+table{border-collapse:collapse;font-size:.84rem;width:100%;min-width:460px}
+th,td{text-align:right;padding:.45rem .8rem;border-bottom:1px solid var(--regla);
+  font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left}
+thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--gris);font-weight:500}
+
+@media (max-width:900px){
+  .cols{grid-template-columns:1fr;padding-top:2rem}
+  nav{position:static;border-bottom:1px solid var(--regla);padding-bottom:1.5rem}
+  nav ol{flex-direction:row;flex-wrap:wrap;gap:.5rem 1.2rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Nota Técnica · Departamento de Países CID · Insumo interno</p>
+    <h1>Ocupaciones, habilidades y exposición a la IA en los sectores exportadores dinámicos</h1>
+    <p class="bajada">Contraparte laboral de la Nota Técnica sobre exportaciones y cadenas
+      de valor en México y Centroamérica. Si la educación terciaria determina el
+      crecimiento exportador de la manufactura compleja, la pregunta que sigue es si la
+      inteligencia artificial amenaza ese empleo o amplifica justamente la capa que
+      habilita el escalamiento.</p>
+    <div class="meta">
+      <span><b>5</b> países con encuestas</span>
+      <span><b>2 586 172</b> vacantes en línea</span>
+      <span><b>2022–2026</b> periodo</span>
+      <span><b>438</b> grupos CIUO-08</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+  <nav aria-label="Hallazgos">
+    <ol>
+      <li><a href="#medida"><span>—</span><span>Cómo se mide</span></a></li>
+      <li><a href="#h1"><span>01</span><span>El riesgo está en la oficina</span></a></li>
+      <li><a href="#h2"><span>02</span><span>Subir es ganar aumentación</span></a></li>
+      <li><a href="#h3"><span>03</span><span>La cadena reparte los nodos</span></a></li>
+      <li><a href="#h4"><span>04</span><span>El capital humano no basta</span></a></li>
+      <li><a href="#h5"><span>05</span><span>La demanda de IA se duplica</span></a></li>
+    </ol>
+    <div class="aparte">
+      <ol>
+        <li><a href="#contexto"><span>·</span><span>Contexto sectorial</span></a></li>
+        <li><a href="#limites"><span>·</span><span>Límites y método</span></a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="medida" id="medida">
+      <p class="eyebrow">La distinción que decide la lectura</p>
+      <h2>Sustituir no es lo mismo que complementar</h2>
+      <p style="max-width:66ch;margin:0 0 1.4rem;color:var(--gris)">
+        Los puntajes de Eloundou et al. (2023) tienen dos componentes que suelen
+        reportarse sumados. Separarlos cambia la conclusión de política, porque miden
+        cosas distintas.</p>
+      <dl class="par">
+        <div class="a">
+          <dt>α · sustitución</dt>
+          <dd>La tarea se resuelve en la mitad del tiempo con <em>solo</em> un modelo de
+            lenguaje. No requiere inversión ni rediseño de procesos: es la medida
+            próxima al desplazamiento.</dd>
+        </div>
+        <div class="b">
+          <dt>β · aumentación</dt>
+          <dd>La fracción adicional que se reduce con software construido sobre el
+            modelo. Exige inversión y capacidad de absorción, así que mide potencial
+            de productividad, no reemplazo.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="hallazgo" id="h1">
+      <p class="eyebrow">Hallazgo 01</p>
+      <h2>El riesgo de sustitución no está en la planta, está en la oficina</h2>
+      <p>El 62% del empleo de los sectores estratégicos se concentra en ocupaciones con
+        α por debajo de 0,10: ensambladores de equipo eléctrico, ensambladores mecánicos,
+        operadores de empaque. No están protegidas por ninguna cualidad especial — es
+        trabajo físico que un modelo de lenguaje no alcanza. El riesgo próximo está en la
+        administración de la planta, no en la planta.</p>
+      <div class="cifras">
+        <div class="cifra"><b>62%</b><span>del empleo sectorial con α &lt; 0,10</span></div>
+        <div class="cifra morado"><b>0,78</b><span>α de capturistas de datos</span></div>
+        <div class="cifra morado"><b>0,48</b><span>α de técnicos de operaciones TIC</span></div>
+        <div class="cifra"><b>35 402</b><span>ocupados en control de almacén, el grupo expuesto más numeroso</span></div>
+      </div>
+      <figure>
+        <img src="figuras/W4_plano_sustitucion_aumentacion.png"
+             alt="Diagrama de dispersión de ocupaciones según riesgo de sustitución y potencial de aumentación; la masa del empleo se concentra abajo a la izquierda y las ocupaciones administrativas aparecen a la derecha.">
+        <figcaption>Cada burbuja es una ocupación CIUO-08 de cuatro dígitos con más de
+          1 200 ocupados en el agregado de los tres sectores estratégicos; el tamaño es
+          proporcional al empleo.</figcaption>
+      </figure>
+    </section>
+
+    <section class="hallazgo" id="h2">
+      <p class="eyebrow">Hallazgo 02</p>
+      <h2>Subir en la escalera de calificación es ganar aumentación, no riesgo</h2>
+      <p>El margen entre aumentación y sustitución crece de forma casi monótona con el
+        nivel de competencia de la CIUO-08. La excepción rompe el patrón de manera
+        instructiva: el apoyo administrativo tiene el α más alto de todas las capas y un
+        margen por debajo de capas menos calificadas. Es el único estrato donde la
+        palabra sustitución describe un riesgo concreto.</p>
+      <div class="tabla">
+        <table>
+          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">Margen β − α por capa ocupacional</caption>
+          <thead><tr><th scope="col">Capa</th><th scope="col">α</th><th scope="col">β</th><th scope="col">Margen</th><th scope="col">Ocupados</th></tr></thead>
+          <tbody>
+            <tr><td>Ocupaciones elementales</td><td>0,09</td><td>0,10</td><td>+0,01</td><td>59 808</td></tr>
+            <tr><td>Operadores de planta</td><td>0,05</td><td>0,10</td><td>+0,05</td><td>384 815</td></tr>
+            <tr><td>Apoyo administrativo</td><td><strong>0,30</strong></td><td>0,48</td><td><strong>+0,18</strong></td><td>60 399</td></tr>
+            <tr><td>Técnicos</td><td>0,17</td><td>0,41</td><td>+0,25</td><td>130 557</td></tr>
+            <tr><td>Profesionales e ingeniería</td><td>0,24</td><td>0,56</td><td>+0,32</td><td>56 099</td></tr>
+            <tr><td>Dirección y gerencia</td><td>0,07</td><td>0,45</td><td>+0,38</td><td>37 164</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure>
+        <img src="figuras/W5_escalera_calificacion.png"
+             alt="Gráfico de mancuernas que muestra α y β por capa ocupacional, con el margen creciendo hacia las capas más calificadas salvo en apoyo administrativo.">
+        <figcaption>Promedios ponderados por empleo sobre el agregado de los tres
+          sectores estratégicos en los cinco países.</figcaption>
+      </figure>
+    </section>
+
+    <section class="hallazgo" id="h3">
+      <p class="eyebrow">Hallazgo 03</p>
+      <h2>La cadena regional de valor reparte los nodos, y se ve en las ocupaciones</h2>
+      <p>La Nota Técnica muestra que cables constituye una cadena regional y los
+        dispositivos médicos un enclave extrarregional. Los datos ocupacionales muestran
+        quién ocupa qué nodo. En un mismo sector y con el mismo producto, la función de
+        mayor calificación está concentrada en unos países y ausente en otros.</p>
+      <div class="cifras">
+        <div class="cifra verde"><b>26%</b><span>capa técnica en cables, México</span></div>
+        <div class="cifra"><b>19%</b><span>Honduras</span></div>
+        <div class="cifra"><b>18%</b><span>Rep. Dominicana</span></div>
+        <div class="cifra"><b>26% / 13%</b><span>dispositivos médicos: Costa Rica frente a Rep. Dominicana</span></div>
+      </div>
+      <figure>
+        <img src="figuras/W6_cadena_regional_capas.png"
+             alt="Barras apiladas al 100% con la composición ocupacional de cables y de dispositivos médicos por país.">
+        <figcaption>Solo se muestran combinaciones país-sector con más de 5 000 ocupados.
+          Último año disponible de cada país.</figcaption>
+      </figure>
+    </section>
+
+    <section class="hallazgo" id="h4">
+      <p class="eyebrow">Hallazgo 04</p>
+      <h2>Tener el capital humano no basta: hay que capturar las funciones que lo usan</h2>
+      <p>Si la disponibilidad nacional de terciarios fuera suficiente, los sectores
+        deberían emplear capa técnica en una proporción parecida a la del stock del país.
+        No ocurre. República Dominicana tiene prácticamente el stock terciario de México
+        y la estructura ocupacional de un país de ensamble. Honduras es el caso opuesto:
+        absorbe más capital humano calificado del que su economía tiene disponible, y ahí
+        la restricción sí es de oferta educativa.</p>
+      <div class="cifras">
+        <div class="cifra"><b>26,4%</b><span>ocupados con terciaria en Rep. Dominicana</span></div>
+        <div class="cifra morado"><b>12,9%</b><span>capa técnica en su sector de dispositivos médicos</span></div>
+        <div class="cifra"><b>32,2%</b><span>terciaria en Costa Rica</span></div>
+        <div class="cifra verde"><b>26,4%</b><span>capa técnica en su mismo sector</span></div>
+      </div>
+      <figure>
+        <img src="figuras/W8_brecha_terciaria_capa.png"
+             alt="Dispersión del stock de educación terciaria del país frente a la capa técnica-profesional que emplea cada sector, con una diagonal de referencia.">
+        <figcaption>Sobre la diagonal, el sector absorbe la terciaria del país en la
+          misma proporción en que la economía la tiene.</figcaption>
+      </figure>
+    </section>
+
+    <section class="hallazgo" id="h5">
+      <p class="eyebrow">Hallazgo 05</p>
+      <h2>La demanda de habilidades de IA se multiplica por 2,5 en cuatro años</h2>
+      <p>Los campos de habilidades que acompañan a cada vacante no sirven para medir
+        requisitos, así que se procesó el texto completo de 2,5 millones de anuncios con
+        un diccionario propio de 44 términos, cada uno validado contra sus contextos
+        reales. La serie exige una corrección: las descripciones se alargan 38% hacia
+        2026 y, sin normalizar, crecen incluso el idioma y el software de oficina.
+        Corregido, esos controles quedan planos y sobreviven dos tendencias reales.</p>
+      <div class="cifras">
+        <div class="cifra verde"><b>2,5×</b><span>demanda de IA y datos, 2022–2026</span></div>
+        <div class="cifra verde"><b>1,6×</b><span>automatización e industria 4.0</span></div>
+        <div class="cifra"><b>0,9×</b><span>idioma y software de oficina, los controles</span></div>
+        <div class="cifra"><b>20% / 8,5%</b><span>inglés: capa técnica frente a planta, la mayor brecha del diccionario</span></div>
+      </div>
+      <figure>
+        <img src="figuras/W9_habilidades_texto.png"
+             alt="Panel izquierdo con las habilidades que separan a la capa técnica de la planta; panel derecho con la evolución normalizada de cada categoría entre 2022 y 2026.">
+        <figcaption>El panel (b) normaliza cada serie por el largo medio de la
+          descripción del año. La serie de control plana es lo que valida que el resto
+          del movimiento no sea del corpus. 2026 cubre de enero a mayo.</figcaption>
+      </figure>
+    </section>
+
+    <section id="contexto">
+      <details>
+        <summary>Contexto sectorial y figuras de respaldo</summary>
+        <div class="grid2">
+          <figure>
+            <img src="figuras/W1_mexico_series.png" alt="Series trimestrales de empleo y exposición en México.">
+            <figcaption>México: empleo y exposición en los sectores dinámicos, 2022T1–2025T4.</figcaption>
+          </figure>
+          <figure>
+            <img src="figuras/W2_mexico_composicion.png" alt="Principales ocupaciones de cada sector en México.">
+            <figcaption>México: composición ocupacional por sector, 2025T4.</figcaption>
+          </figure>
+          <figure>
+            <img src="figuras/W3_costa_rica.png" alt="Empleo en instrumentos médicos y exposición por sector en Costa Rica.">
+            <figcaption>Costa Rica: el 49% del empleo de dispositivos médicos son
+              operadores de empaque, con α y β iguales a cero.</figcaption>
+          </figure>
+          <figure>
+            <img src="figuras/W7_regional.png" alt="Exposición por nivel educativo y sexo en seis países.">
+            <figcaption>El gradiente educativo y de género es idéntico en toda la región.</figcaption>
+          </figure>
+          <figure>
+            <img src="figuras/A1_sectores_region.png" alt="Empleo y exposición en los sectores estratégicos por país.">
+            <figcaption>Anexo: huella laboral de los sectores estratégicos por país.</figcaption>
+          </figure>
+          <figure>
+            <img src="figuras/A2_intensidad_demanda.png" alt="Intensidad relativa de la demanda en línea por tramo de exposición.">
+            <figcaption>Anexo: la demanda en línea es más expuesta por lo que publica, no
+              porque la contratación se desplace.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+
+    <section class="limites" id="limites">
+      <p class="eyebrow">Qué no dicen estos datos</p>
+      <h2 style="font-family:var(--serif);font-weight:600;font-size:1.5rem;margin:.5rem 0 0">Límites declarados</h2>
+      <ul>
+        <li><strong>México y los dispositivos médicos.</strong> La ENOE pública no permite
+          aislar la fabricación de dispositivos médicos: su variable de actividad no llega
+          al nivel de clase. El bloque ocupacional que suele usarse como aproximación mide
+          servicios de salud, no manufactura, y aquí se reporta por separado y con su
+          nombre real.</li>
+        <li><strong>Guatemala queda fuera del análisis ocupacional.</strong> Su encuesta
+          pública publica la ocupación a dos dígitos, insuficiente para trabajar por
+          ocupación.</li>
+        <li><strong>Un empleo poco expuesto es también poco aumentable.</strong> La
+          protección frente a la ola actual y el estancamiento en el eslabón de menor
+          valor agregado son, en estos datos, la misma cosa vista desde dos ángulos.</li>
+        <li><strong>Las vacantes en línea no son una muestra del mercado.</strong> Son una
+          muestra de su capa formal y urbana; el nivel de su exposición refleja qué tipo de
+          puesto se publica, no un desplazamiento de la contratación.</li>
+        <li><strong>Panamá no está.</strong> El Observatorio entregó cinco de los seis
+          países previstos.</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Fuentes.</strong> Encuestas de empleo y hogares: ENOE (México), ECE
+      (Costa Rica), EHPM (El Salvador), EPHPM (Honduras), ENCFT (República Dominicana) y
+      ENCOVI (Guatemala). Vacantes en línea del Observatorio Laboral del BID, junio 2022 a
+      mayo 2026. Puntajes de exposición de Eloundou, Manning, Mishkin y Rock (2023),
+      transferidos por O*NET/SOC-2018 → SOC-2010 → CIUO-08 con las correspondencias
+      oficiales y O*NET 27.2.</p>
+    <p style="margin-top:1rem">Los cuadros agregados que respaldan cada figura están en
+      <code>datos/</code> de este repositorio. Insumo interno de trabajo: los resultados
+      acompañan una Nota Técnica en preparación y no constituyen una publicación del
+      Banco Interamericano de Desarrollo ni reflejan necesariamente su posición.</p>
+  </div>
+</footer>
+
+</body>
+</html>

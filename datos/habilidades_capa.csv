@@ -1,0 +1,169 @@
+capa,termino,categoria,anuncios,total_capa,share
+Apoyo administrativo,Inglés,Idioma,41074,281845,0.14573258351221416
+Apoyo administrativo,Excel,Software técnico y de gestión,30145,281845,0.10695595096595646
+Apoyo administrativo,SAP,Software técnico y de gestión,10062,281845,0.03570047366460288
+Apoyo administrativo,Mejora continua,Mejora continua y manufactura esbelta,7621,281845,0.02703968493320797
+Apoyo administrativo,Bilingüe,Idioma,7242,281845,0.02569497418794018
+Apoyo administrativo,ERP,Software técnico y de gestión,5609,281845,0.019901009420071315
+Apoyo administrativo,Analítica de datos,Inteligencia artificial y datos,3526,281845,0.01251042239528819
+Apoyo administrativo,Automatización,Automatización e industria 4.0,2987,281845,0.010598023736450886
+Apoyo administrativo,SQL,Software técnico y de gestión,2282,281845,0.00809664886728521
+Apoyo administrativo,Power BI / Tableau,Software técnico y de gestión,2166,281845,0.007685075129947311
+Apoyo administrativo,Lean manufacturing,Mejora continua y manufactura esbelta,2045,281845,0.007255761145310366
+Apoyo administrativo,Python,Software técnico y de gestión,1226,281845,0.00434990863772641
+Apoyo administrativo,5S,Mejora continua y manufactura esbelta,1204,281845,0.004271851549610602
+Apoyo administrativo,AutoCAD,Software técnico y de gestión,1114,281845,0.00395252709822775
+Apoyo administrativo,ISO 9001,Sistemas de calidad y regulación,1090,281845,0.003867373911192322
+Apoyo administrativo,Inteligencia artificial,Inteligencia artificial y datos,956,281845,0.003391935283577853
+Apoyo administrativo,Six Sigma,Mejora continua y manufactura esbelta,865,281845,0.0030690627827351913
+Apoyo administrativo,Buenas prácticas de manufactura,Sistemas de calidad y regulación,764,281845,0.002710709787294435
+Apoyo administrativo,ISO 14001,Sistemas de calidad y regulación,613,281845,0.002174954318863205
+Apoyo administrativo,PLC,Automatización e industria 4.0,567,281845,0.002011744043711969
+Apoyo administrativo,"Core tools (APQP, PPAP, MSA)",Sistemas de calidad y regulación,552,281845,0.0019585233018148272
+Apoyo administrativo,Machine learning,Inteligencia artificial y datos,539,281845,0.0019123986588373042
+Apoyo administrativo,Kaizen,Mejora continua y manufactura esbelta,443,281845,0.0015717859106955951
+Apoyo administrativo,Ciencia de datos,Inteligencia artificial y datos,384,281845,0.0013624509925668363
+Apoyo administrativo,AMEF / FMEA,Sistemas de calidad y regulación,376,281845,0.0013340665968883606
+Apoyo administrativo,Kanban,Mejora continua y manufactura esbelta,330,281845,0.001170856321737125
+Apoyo administrativo,TPM,Mejora continua y manufactura esbelta,321,281845,0.0011389238765988398
+Apoyo administrativo,FDA,Sistemas de calidad y regulación,290,281845,0.0010289343433447463
+Apoyo administrativo,Control estadístico (SPC),Sistemas de calidad y regulación,273,281845,0.0009686175025279852
+Apoyo administrativo,Robótica,Automatización e industria 4.0,265,281845,0.0009402331068495094
+Apoyo administrativo,IoT,Automatización e industria 4.0,229,281845,0.0008125033262963686
+Apoyo administrativo,SolidWorks,Software técnico y de gestión,189,281845,0.0006705813479039898
+Apoyo administrativo,ISO 13485,Sistemas de calidad y regulación,173,281845,0.0006138125565470383
+Apoyo administrativo,Minitab,Software técnico y de gestión,154,281845,0.0005463996168106584
+Apoyo administrativo,Industria 4.0,Automatización e industria 4.0,115,281845,0.00040802568787808903
+Apoyo administrativo,Herramientas de IA generativa,Inteligencia artificial y datos,106,281845,0.00037609324273980377
+Apoyo administrativo,SMED,Mejora continua y manufactura esbelta,82,281845,0.0002909400557043765
+Apoyo administrativo,SCADA,Automatización e industria 4.0,79,281845,0.0002802959073249481
+Apoyo administrativo,MATLAB / LabVIEW,Software técnico y de gestión,77,281845,0.0002731998084053292
+Apoyo administrativo,Regulación de dispositivos médicos,Sistemas de calidad y regulación,72,281845,0.0002554595611062818
+Apoyo administrativo,CATIA,Software técnico y de gestión,49,281845,0.00017385442353066402
+Apoyo administrativo,Visión artificial,Automatización e industria 4.0,11,281845,3.902854405790417e-05
+Capa técnica-profesional,Inglés,Idioma,292260,1460709,0.20008091960821767
+Capa técnica-profesional,Excel,Software técnico y de gestión,164249,1460709,0.1124447100688775
+Capa técnica-profesional,Mejora continua,Mejora continua y manufactura esbelta,72092,1460709,0.04935411502222551
+Capa técnica-profesional,SAP,Software técnico y de gestión,63587,1460709,0.04353160006544767
+Capa técnica-profesional,Automatización,Automatización e industria 4.0,42719,1460709,0.029245387000422396
+Capa técnica-profesional,SQL,Software técnico y de gestión,36047,1460709,0.024677742110167048
+Capa técnica-profesional,ERP,Software técnico y de gestión,35690,1460709,0.02443334024778378
+Capa técnica-profesional,Analítica de datos,Inteligencia artificial y datos,35263,1460709,0.024141016451599873
+Capa técnica-profesional,Bilingüe,Idioma,31344,1460709,0.021458072757818292
+Capa técnica-profesional,Lean manufacturing,Mejora continua y manufactura esbelta,26885,1460709,0.01840544557471748
+Capa técnica-profesional,Python,Software técnico y de gestión,24172,1460709,0.01654812834041551
+Capa técnica-profesional,Power BI / Tableau,Software técnico y de gestión,21792,1460709,0.014918782591193728
+Capa técnica-profesional,AutoCAD,Software técnico y de gestión,17243,1460709,0.011804541493206382
+Capa técnica-profesional,Six Sigma,Mejora continua y manufactura esbelta,14170,1460709,0.009700768599358258
+Capa técnica-profesional,Inteligencia artificial,Inteligencia artificial y datos,12336,1460709,0.008445213933781472
+Capa técnica-profesional,ISO 9001,Sistemas de calidad y regulación,11225,1460709,0.0076846243844598755
+Capa técnica-profesional,5S,Mejora continua y manufactura esbelta,10124,1460709,0.006930880825681228
+Capa técnica-profesional,"Core tools (APQP, PPAP, MSA)",Sistemas de calidad y regulación,8478,1460709,0.0058040307823118776
+Capa técnica-profesional,AMEF / FMEA,Sistemas de calidad y regulación,8300,1460709,0.005682172150647391
+Capa técnica-profesional,Buenas prácticas de manufactura,Sistemas de calidad y regulación,8176,1460709,0.005597281867914828
+Capa técnica-profesional,PLC,Automatización e industria 4.0,7178,1460709,0.004914052011728551
+Capa técnica-profesional,Machine learning,Inteligencia artificial y datos,6964,1460709,0.00476754781410945
+Capa técnica-profesional,Kaizen,Mejora continua y manufactura esbelta,6142,1460709,0.004204807391479069
+Capa técnica-profesional,ISO 14001,Sistemas de calidad y regulación,6070,1460709,0.004155516259569839
+Capa técnica-profesional,Control estadístico (SPC),Sistemas de calidad y regulación,5888,1460709,0.004030919231688173
+Capa técnica-profesional,Ciencia de datos,Inteligencia artificial y datos,5593,1460709,0.0038289625106711876
+Capa técnica-profesional,FDA,Sistemas de calidad y regulación,5337,1460709,0.003653705152771702
+Capa técnica-profesional,Kanban,Mejora continua y manufactura esbelta,5060,1460709,0.003464071214732024
+Capa técnica-profesional,SolidWorks,Software técnico y de gestión,4262,1460709,0.0029177611694047208
+Capa técnica-profesional,IoT,Automatización e industria 4.0,3803,1460709,0.002603530203483377
+Capa técnica-profesional,TPM,Mejora continua y manufactura esbelta,3634,1460709,0.0024878329633075446
+Capa técnica-profesional,ISO 13485,Sistemas de calidad y regulación,3445,1460709,0.0023584437420458145
+Capa técnica-profesional,Robótica,Automatización e industria 4.0,3387,1460709,0.0023187369968967124
+Capa técnica-profesional,Minitab,Software técnico y de gestión,3262,1460709,0.0022331621151098543
+Capa técnica-profesional,Herramientas de IA generativa,Inteligencia artificial y datos,2889,1460709,0.001977806667857869
+Capa técnica-profesional,MATLAB / LabVIEW,Software técnico y de gestión,1511,1460709,0.0010344291710395431
+Capa técnica-profesional,Regulación de dispositivos médicos,Sistemas de calidad y regulación,1486,1460709,0.0010173141946821715
+Capa técnica-profesional,Industria 4.0,Automatización e industria 4.0,1230,1460709,0.0008420568367826857
+Capa técnica-profesional,CATIA,Software técnico y de gestión,1225,1460709,0.0008386338415112114
+Capa técnica-profesional,SMED,Mejora continua y manufactura esbelta,1217,1460709,0.0008331570490768525
+Capa técnica-profesional,SCADA,Automatización e industria 4.0,1069,1460709,0.0007318363890412121
+Capa técnica-profesional,Visión artificial,Automatización e industria 4.0,233,1460709,0.00015951157965070386
+Oficios y artesanía,Inglés,Idioma,47660,599910,0.07944525012085146
+Oficios y artesanía,Excel,Software técnico y de gestión,35188,599910,0.05865546498641463
+Oficios y artesanía,Mejora continua,Mejora continua y manufactura esbelta,12759,599910,0.02126819022853428
+Oficios y artesanía,SAP,Software técnico y de gestión,11541,599910,0.019237885682852427
+Oficios y artesanía,Automatización,Automatización e industria 4.0,5780,599910,0.00963477855011585
+Oficios y artesanía,Bilingüe,Idioma,5354,599910,0.008924672034138454
+Oficios y artesanía,ERP,Software técnico y de gestión,5265,599910,0.00877631644746712
+Oficios y artesanía,Analítica de datos,Inteligencia artificial y datos,3890,599910,0.006484305979230218
+Oficios y artesanía,Lean manufacturing,Mejora continua y manufactura esbelta,3885,599910,0.006475971395709356
+Oficios y artesanía,PLC,Automatización e industria 4.0,3357,599910,0.005595839375906386
+Oficios y artesanía,AutoCAD,Software técnico y de gestión,3290,599910,0.005484155956726842
+Oficios y artesanía,Buenas prácticas de manufactura,Sistemas de calidad y regulación,3263,599910,0.00543914920571419
+Oficios y artesanía,5S,Mejora continua y manufactura esbelta,3178,599910,0.005297461285859546
+Oficios y artesanía,SQL,Software técnico y de gestión,3105,599910,0.005175776366454968
+Oficios y artesanía,ISO 9001,Sistemas de calidad y regulación,2506,599910,0.004177293260655765
+Oficios y artesanía,Power BI / Tableau,Software técnico y de gestión,2347,599910,0.0039122535046923704
+Oficios y artesanía,Python,Software técnico y de gestión,1695,599910,0.0028254238135720358
+Oficios y artesanía,TPM,Mejora continua y manufactura esbelta,1581,599910,0.0026353953092963945
+Oficios y artesanía,Six Sigma,Mejora continua y manufactura esbelta,1553,599910,0.0025887216415795703
+Oficios y artesanía,"Core tools (APQP, PPAP, MSA)",Sistemas de calidad y regulación,1334,599910,0.0022236668833658384
+Oficios y artesanía,ISO 14001,Sistemas de calidad y regulación,1268,599910,0.002113650380890467
+Oficios y artesanía,AMEF / FMEA,Sistemas de calidad y regulación,1070,599910,0.001783600873464353
+Oficios y artesanía,Control estadístico (SPC),Sistemas de calidad y regulación,1013,599910,0.0016885866213265323
+Oficios y artesanía,Kaizen,Mejora continua y manufactura esbelta,972,599910,0.0016202430364554684
+Oficios y artesanía,Inteligencia artificial,Inteligencia artificial y datos,922,599910,0.0015368972012468538
+Oficios y artesanía,Robótica,Automatización e industria 4.0,804,599910,0.0013402010301545233
+Oficios y artesanía,FDA,Sistemas de calidad y regulación,691,599910,0.0011518394425830542
+Oficios y artesanía,SolidWorks,Software técnico y de gestión,681,599910,0.0011351702755413313
+Oficios y artesanía,Kanban,Mejora continua y manufactura esbelta,598,599910,0.0009968161890950308
+Oficios y artesanía,ISO 13485,Sistemas de calidad y regulación,547,599910,0.000911803437182244
+Oficios y artesanía,Machine learning,Inteligencia artificial y datos,513,599910,0.0008551282692403861
+Oficios y artesanía,Minitab,Software técnico y de gestión,408,599910,0.0006801020153022954
+Oficios y artesanía,Ciencia de datos,Inteligencia artificial y datos,366,599910,0.000610091513727059
+Oficios y artesanía,IoT,Automatización e industria 4.0,332,599910,0.0005534163457852011
+Oficios y artesanía,SMED,Mejora continua y manufactura esbelta,248,599910,0.00041339534263472853
+Oficios y artesanía,Industria 4.0,Automatización e industria 4.0,231,599910,0.00038505775866379954
+Oficios y artesanía,MATLAB / LabVIEW,Software técnico y de gestión,201,599910,0.0003350502575386308
+Oficios y artesanía,Regulación de dispositivos médicos,Sistemas de calidad y regulación,192,599910,0.00032004800720108014
+Oficios y artesanía,SCADA,Automatización e industria 4.0,182,599910,0.0003033788401593572
+Oficios y artesanía,CATIA,Software técnico y de gestión,119,599910,0.0001983630877965028
+Oficios y artesanía,Herramientas de IA generativa,Inteligencia artificial y datos,62,599910,0.00010334883565868213
+Oficios y artesanía,Visión artificial,Automatización e industria 4.0,17,599910,2.8337583970928973e-05
+Planta y operación,Inglés,Idioma,13835,163726,0.08450093448810818
+Planta y operación,Excel,Software técnico y de gestión,8973,163726,0.05480497905036463
+Planta y operación,Mejora continua,Mejora continua y manufactura esbelta,3905,163726,0.023850823937554208
+Planta y operación,SAP,Software técnico y de gestión,3725,163726,0.022751426163223922
+Planta y operación,ERP,Software técnico y de gestión,1640,163726,0.010016735277231473
+Planta y operación,Automatización,Automatización e industria 4.0,1615,163726,0.009864041141907821
+Planta y operación,Bilingüe,Idioma,1404,163726,0.008575302639776211
+Planta y operación,5S,Mejora continua y manufactura esbelta,1244,163726,0.0075980601737048485
+Planta y operación,Lean manufacturing,Mejora continua y manufactura esbelta,1172,163726,0.007158301063972735
+Planta y operación,Analítica de datos,Inteligencia artificial y datos,1160,163726,0.007085007879017383
+Planta y operación,Buenas prácticas de manufactura,Sistemas de calidad y regulación,1059,163726,0.006468123572309835
+Planta y operación,AutoCAD,Software técnico y de gestión,1052,163726,0.006425369214419213
+Planta y operación,PLC,Automatización e industria 4.0,982,163726,0.005997825635512991
+Planta y operación,SQL,Software técnico y de gestión,945,163726,0.005771838315233989
+Planta y operación,ISO 9001,Sistemas de calidad y regulación,784,163726,0.0047884880837496795
+Planta y operación,Power BI / Tableau,Software técnico y de gestión,665,163726,0.004061663999609103
+Planta y operación,TPM,Mejora continua y manufactura esbelta,542,163726,0.0033104088538167425
+Planta y operación,ISO 14001,Sistemas de calidad y regulación,533,163726,0.0032554389651002283
+Planta y operación,Python,Software técnico y de gestión,527,163726,0.0032187923726225524
+Planta y operación,Six Sigma,Mejora continua y manufactura esbelta,478,163726,0.0029195118673881974
+Planta y operación,"Core tools (APQP, PPAP, MSA)",Sistemas de calidad y regulación,423,163726,0.0025835847696761664
+Planta y operación,AMEF / FMEA,Sistemas de calidad y regulación,318,163726,0.0019422694013168343
+Planta y operación,Inteligencia artificial,Inteligencia artificial y datos,307,163726,0.001875083981774428
+Planta y operación,Kaizen,Mejora continua y manufactura esbelta,303,163726,0.001850652920122644
+Planta y operación,Control estadístico (SPC),Sistemas de calidad y regulación,273,163726,0.0016674199577342633
+Planta y operación,Robótica,Automatización e industria 4.0,250,163726,0.001526941353236505
+Planta y operación,Kanban,Mejora continua y manufactura esbelta,238,163726,0.0014536481682811526
+Planta y operación,SolidWorks,Software técnico y de gestión,232,163726,0.0014170015758034765
+Planta y operación,FDA,Sistemas de calidad y regulación,226,163726,0.0013803549833258004
+Planta y operación,Machine learning,Inteligencia artificial y datos,195,163726,0.0011910142555244738
+Planta y operación,Minitab,Software técnico y de gestión,146,163726,0.0008917337502901189
+Planta y operación,ISO 13485,Sistemas de calidad y regulación,123,163726,0.0007512551457923604
+Planta y operación,Ciencia de datos,Inteligencia artificial y datos,120,163726,0.0007329318495535224
+Planta y operación,IoT,Automatización e industria 4.0,103,163726,0.00062909983753344
+Planta y operación,SMED,Mejora continua y manufactura esbelta,81,163726,0.0004947289984486275
+Planta y operación,MATLAB / LabVIEW,Software técnico y de gestión,71,163726,0.0004336513443191674
+Planta y operación,Industria 4.0,Automatización e industria 4.0,64,163726,0.00039089698642854524
+Planta y operación,Regulación de dispositivos médicos,Sistemas de calidad y regulación,43,163726,0.00026263391275667885
+Planta y operación,SCADA,Automatización e industria 4.0,41,163726,0.00025041838193078683
+Planta y operación,CATIA,Software técnico y de gestión,26,163726,0.0001588019007365965
+Planta y operación,Herramientas de IA generativa,Inteligencia artificial y datos,9,163726,5.496988871651417e-05
+Planta y operación,Visión artificial,Automatización e industria 4.0,7,163726,4.275435789062214e-05
