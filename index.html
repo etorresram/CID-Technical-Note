@@ -90,6 +90,9 @@ details summary:focus-visible{outline:2px solid var(--aumentar);outline-offset:3
 details[open] summary{margin-bottom:1.6rem;color:var(--tinta)}
 
 /* ---------- límites y pie ---------- */
+.parte{border-top:2px solid var(--tinta);padding-top:.7rem;margin-bottom:-2rem}
+.parte h2{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin:.3rem 0 .2rem}
+.parte p{color:var(--gris);font-size:.9rem;margin:0;max-width:62ch}
 .limites ul{max-width:70ch;padding-left:1.1rem;margin:1rem 0 0}
 .limites li{margin-bottom:.7rem}
 footer{border-top:1px solid var(--regla);padding:2.5rem 0 4rem;
@@ -148,6 +151,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
     <div class="aparte">
       <ol>
         <li><a href="#contexto"><span>·</span><span>Contexto sectorial</span></a></li>
+        <li><a href="#alineacion"><span>·</span><span>¿Se alinea con la NT?</span></a></li>
         <li><a href="#limites"><span>·</span><span>Límites y método</span></a></li>
       </ol>
     </div>
@@ -221,7 +225,14 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
       </dl>
     </section>
 
-        <section class="hallazgo" id="h1">
+        <section class="parte">
+      <p class="eyebrow">Parte I</p>
+      <h2>La oferta: qué muestran las encuestas de empleo</h2>
+      <p>Seis países, entre 2021 y 2025, con el empleo ponderado por los factores de
+        expansión de cada encuesta.</p>
+    </section>
+
+    <section class="hallazgo" id="h1">
       <p class="eyebrow">Hallazgo 01</p>
       <h2>La exposición crece con la calificación, y la capa expuesta es la que
         habilita el escalamiento</h2>
@@ -298,6 +309,13 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
       </figure>
     </section>
 
+    <section class="parte">
+      <p class="eyebrow">Parte II</p>
+      <h2>La demanda: qué muestran las vacantes en línea</h2>
+      <p>2,59 millones de anuncios del Observatorio Laboral del BID, cinco países, de
+        junio de 2022 a mayo de 2026.</p>
+    </section>
+
     <section class="hallazgo" id="h4">
       <p class="eyebrow">Hallazgo 04</p>
       <h2>La demanda de habilidades de IA se multiplica por 2,7 en cuatro años</h2>
@@ -354,6 +372,37 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
           </figure>
         </div>
       </details>
+    </section>
+
+    <section class="hallazgo" id="alineacion">
+      <p class="eyebrow">La pregunta de fondo</p>
+      <h2>¿Se alinea con el argumento de la Nota Técnica?</h2>
+      <p>La tesis central es que el capital humano terciario determina el crecimiento
+        exportador de la manufactura compleja. Eso tiene una implicación observable: si
+        los sectores están escalando, su capa calificada debería ganar peso en el empleo;
+        y si la restricción es de oferta, los empleadores deberían pedirla más de lo que
+        el empleo la entrega. <strong>Las dos series apuntan en direcciones
+        opuestas</strong>, y esa divergencia es el hallazgo más útil de este trabajo.</p>
+      <div class="cifras">
+        <div class="cifra morado"><b>−0,8</b><span>pp por año: la capa calificada del sector en México, 2022–2025</span></div>
+        <div class="cifra"><b>601→633 mil</b><span>ocupados en el mismo sector y periodo: crece, pero hacia abajo</span></div>
+        <div class="cifra verde"><b>+6,7</b><span>pp: la capa calificada en las vacantes mexicanas, 2022–2026</span></div>
+      </div>
+      <figure>
+        <img src="figuras/W9_escalamiento.png"
+             alt="Dos paneles: la capa calificada del empleo sectorial cae en México mientras la de las vacantes sube.">
+        <figcaption>La serie costarricense se grafica más tenue porque su muestra
+          trimestral es de 38 a 92 observaciones y no sostiene una afirmación de
+          tendencia. El panel (b) cubre el total de las vacantes de cada país, no solo
+          las de los sectores estratégicos, porque el corpus no permite aislarlos.</figcaption>
+      </figure>
+      <p>La lectura conjunta <strong>respalda el argumento y a la vez lo precisa</strong>.
+        Lo respalda porque confirma que el capital humano calificado es el margen que
+        importa: es la capa que la demanda persigue y la que el empleo sectorial no logra
+        ampliar. Lo precisa porque muestra que la restricción no se está resolviendo sola
+        con el auge exportador. Los sectores han creado empleo, pero ensanchando la base
+        operativa. Una política que dé por descontado que el crecimiento exportador
+        arrastrará la calificación de la fuerza laboral no encuentra apoyo en estos datos.</p>
     </section>
 
     <section class="limites" id="limites">
