@@ -140,7 +140,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
     <ol>
       <li><a href="#medida"><span>—</span><span>Cómo se mide</span></a></li>
       <li><a href="#h1"><span>01</span><span>El riesgo está en la oficina</span></a></li>
-      <li><a href="#h2"><span>02</span><span>Subir es ganar aumentación</span></a></li>
+      <li><a href="#h2"><span>02</span><span>La capa calificada no está a salvo</span></a></li>
       <li><a href="#h3"><span>03</span><span>La cadena reparte los nodos</span></a></li>
       <li><a href="#h4"><span>04</span><span>El capital humano no basta</span></a></li>
       <li><a href="#h5"><span>05</span><span>La demanda de IA se duplica</span></a></li>
@@ -157,75 +157,83 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
 
     <section class="medida" id="medida">
       <p class="eyebrow">La distinción que decide la lectura</p>
-      <h2>Sustituir no es lo mismo que complementar</h2>
-      <p style="max-width:66ch;margin:0 0 1.4rem;color:var(--gris)">
-        Los puntajes de Eloundou et al. (2023) tienen dos componentes que suelen
-        reportarse sumados. Separarlos cambia la conclusión de política, porque miden
-        cosas distintas.</p>
+      <h2>Exposición no es lo mismo que automatización</h2>
+      <p style="max-width:68ch;margin:0 0 1.4rem;color:var(--gris)">
+        La rúbrica de Eloundou et al. (2023) etiqueta cada tarea como sin exposición,
+        de exposición <em>directa</em> —el modelo por sí solo reduce el tiempo a la
+        mitad— o de exposición <em>mediada por software</em>. Los puntajes publicados
+        son composiciones de esas etiquetas: α son las directas y β suma a α la mitad
+        de las mediadas, de modo que β contiene a α y nunca puede ser menor. No son
+        dos magnitudes contrapuestas. Y ninguna mide reemplazo: para eso los autores
+        implementan una rúbrica aparte, de automatización.</p>
       <dl class="par">
         <div class="a">
-          <dt>α · sustitución</dt>
-          <dd>La tarea se resuelve en la mitad del tiempo con <em>solo</em> un modelo de
-            lenguaje. No requiere inversión ni rediseño de procesos: es la medida
-            próxima al desplazamiento.</dd>
+          <dt>Automatización</dt>
+          <dd>¿Puede el software <em>completar</em> la tarea, y con cuánta supervisión
+            humana? Es la medida relevante para el desplazamiento. Su correlación con
+            α es de solo +0,66: la exposición directa no la aproxima.</dd>
         </div>
         <div class="b">
-          <dt>β · aumentación</dt>
-          <dd>La fracción adicional que se reduce con software construido sobre el
-            modelo. Exige inversión y capacidad de absorción, así que mide potencial
-            de productividad, no reemplazo.</dd>
+          <dt>α · exposición directa</dt>
+          <dd>Proporción de tareas que un modelo de uso general ya abarata sin
+            desarrollar nada a medida. Leída junto a la automatización, indica qué
+            parte del riesgo está disponible <em>hoy</em> y qué parte exige inversión.</dd>
         </div>
       </dl>
     </section>
 
     <section class="hallazgo" id="h1">
       <p class="eyebrow">Hallazgo 01</p>
-      <h2>El riesgo de sustitución no está en la planta, está en la oficina</h2>
-      <p>El 62% del empleo de los sectores estratégicos se concentra en ocupaciones con
-        α por debajo de 0,10: ensambladores de equipo eléctrico, ensambladores mecánicos,
-        operadores de empaque. No están protegidas por ninguna cualidad especial — es
-        trabajo físico que un modelo de lenguaje no alcanza. El riesgo próximo está en la
-        administración de la planta, no en la planta.</p>
+      <h2>El riesgo de automatización no está en la planta, está en la oficina</h2>
+      <p>El 56% del empleo de los sectores estratégicos está en ocupaciones cuya
+        automatización es inferior a 0,10: ensambladores, operadores de empaque,
+        embaladores. Es trabajo físico que un sistema de lenguaje no alcanza. El riesgo
+        se concentra en la administración de la planta — y la exposición directa por sí
+        sola no lo detecta: gerentes de recursos humanos, compradores y analistas de
+        gestión tienen α por debajo de 0,10 y automatización sobre 0,50.</p>
       <div class="cifras">
-        <div class="cifra"><b>62%</b><span>del empleo sectorial con α &lt; 0,10</span></div>
-        <div class="cifra morado"><b>0,78</b><span>α de capturistas de datos</span></div>
-        <div class="cifra morado"><b>0,48</b><span>α de técnicos de operaciones TIC</span></div>
-        <div class="cifra"><b>35 402</b><span>ocupados en control de almacén, el grupo expuesto más numeroso</span></div>
+        <div class="cifra"><b>56%</b><span>del empleo sectorial con automatización &lt; 0,10</span></div>
+        <div class="cifra morado"><b>0,67</b><span>capturistas de datos</span></div>
+        <div class="cifra morado"><b>0,66</b><span>contadores, con α de solo 0,14</span></div>
+        <div class="cifra"><b>+0,66</b><span>correlación entre α y automatización: son medidas distintas</span></div>
       </div>
       <figure>
         <img src="figuras/W4_plano_sustitucion_aumentacion.png"
-             alt="Diagrama de dispersión de ocupaciones según riesgo de sustitución y potencial de aumentación; la masa del empleo se concentra abajo a la izquierda y las ocupaciones administrativas aparecen a la derecha.">
+             alt="Dispersión de ocupaciones según exposición directa y automatización; la planta se agrupa abajo a la izquierda y las ocupaciones de oficina arriba.">
         <figcaption>Cada burbuja es una ocupación CIUO-08 de cuatro dígitos con más de
-          1 200 ocupados en el agregado de los tres sectores estratégicos; el tamaño es
-          proporcional al empleo.</figcaption>
+          1 200 ocupados; el tamaño es proporcional al empleo. Sobre la diagonal, el
+          software puede completar más tarea de la que el modelo abarata por sí solo:
+          exposición que exige inversión.</figcaption>
       </figure>
     </section>
 
     <section class="hallazgo" id="h2">
       <p class="eyebrow">Hallazgo 02</p>
-      <h2>Subir en la escalera de calificación es ganar aumentación, no riesgo</h2>
-      <p>El margen entre aumentación y sustitución crece de forma casi monótona con el
-        nivel de competencia de la CIUO-08. La excepción rompe el patrón de manera
-        instructiva: el apoyo administrativo tiene el α más alto de todas las capas y un
-        margen por debajo de capas menos calificadas. Es el único estrato donde la
-        palabra sustitución describe un riesgo concreto.</p>
+      <h2>La capa calificada no está a salvo: su exposición es contingente, no baja</h2>
+      <p>La automatización crece con el nivel de competencia hasta el apoyo
+        administrativo, la capa más automatizable de todas. Técnicos, profesionales y
+        dirección quedan cerca. Lo que los separa no es la magnitud sino el plazo: en la
+        oficina casi dos tercios de esa exposición ya está disponible con herramientas
+        de uso general, mientras en dirección solo el 17% lo está y el resto depende de
+        que alguien desarrolle software específico. Eso concede tiempo, no inmunidad.</p>
       <div class="tabla">
         <table>
-          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">Margen β − α por capa ocupacional</caption>
-          <thead><tr><th scope="col">Capa</th><th scope="col">α</th><th scope="col">β</th><th scope="col">Margen</th><th scope="col">Ocupados</th></tr></thead>
+          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">Automatización y parte alcanzable sin inversión</caption>
+          <thead><tr><th scope="col">Capa</th><th scope="col">α</th><th scope="col">Automatización</th><th scope="col">Sin inversión</th><th scope="col">Ocupados</th></tr></thead>
           <tbody>
-            <tr><td>Ocupaciones elementales</td><td>0,09</td><td>0,10</td><td>+0,01</td><td>59 808</td></tr>
-            <tr><td>Operadores de planta</td><td>0,05</td><td>0,10</td><td>+0,05</td><td>384 815</td></tr>
-            <tr><td>Apoyo administrativo</td><td><strong>0,30</strong></td><td>0,48</td><td><strong>+0,18</strong></td><td>60 399</td></tr>
-            <tr><td>Técnicos</td><td>0,17</td><td>0,41</td><td>+0,25</td><td>130 557</td></tr>
-            <tr><td>Profesionales e ingeniería</td><td>0,24</td><td>0,56</td><td>+0,32</td><td>56 099</td></tr>
-            <tr><td>Dirección y gerencia</td><td>0,07</td><td>0,45</td><td>+0,38</td><td>37 164</td></tr>
+            <tr><td>Operadores de planta</td><td>0,05</td><td>0,09</td><td>56%</td><td>384 815</td></tr>
+            <tr><td>Ocupaciones elementales</td><td>0,09</td><td>0,10</td><td>86%</td><td>58 966</td></tr>
+            <tr><td>Oficios y artesanía</td><td>0,11</td><td>0,19</td><td>60%</td><td>28 049</td></tr>
+            <tr><td>Técnicos</td><td>0,17</td><td>0,39</td><td>42%</td><td>130 557</td></tr>
+            <tr><td>Dirección y gerencia</td><td>0,07</td><td>0,44</td><td><strong>17%</strong></td><td>37 164</td></tr>
+            <tr><td>Profesionales e ingeniería</td><td>0,24</td><td>0,46</td><td>52%</td><td>56 099</td></tr>
+            <tr><td><strong>Apoyo administrativo</strong></td><td>0,30</td><td><strong>0,48</strong></td><td><strong>62%</strong></td><td>60 399</td></tr>
           </tbody>
         </table>
       </div>
       <figure>
         <img src="figuras/W5_escalera_calificacion.png"
-             alt="Gráfico de mancuernas que muestra α y β por capa ocupacional, con el margen creciendo hacia las capas más calificadas salvo en apoyo administrativo.">
+             alt="Gráfico de mancuernas con la exposición directa y la automatización por capa ocupacional.">
         <figcaption>Promedios ponderados por empleo sobre el agregado de los tres
           sectores estratégicos en los cinco países.</figcaption>
       </figure>

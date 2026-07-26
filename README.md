@@ -16,12 +16,13 @@ Departamento de Países CID.
 
 ## Los cinco hallazgos
 
-1. **El riesgo de sustitución está en la oficina, no en la planta.** El 62% del
-   empleo sectorial tiene α por debajo de 0,10; el riesgo se concentra en
-   capturistas de datos (0,78) y técnicos de operaciones TIC (0,48).
-2. **Subir en la escalera de calificación es ganar aumentación.** El margen β−α
-   crece de +0,01 en ocupaciones elementales a +0,38 en dirección. La excepción
-   es el apoyo administrativo, único estrato con riesgo material.
+1. **El riesgo de automatización está en la oficina, no en la planta.** El 56%
+   del empleo sectorial tiene automatización por debajo de 0,10; el riesgo se
+   concentra en capturistas (0,67), contadores (0,66) y oficinistas (0,64).
+2. **La capa calificada no está a salvo: su exposición es contingente.** Técnicos,
+   profesionales y dirección llegan a 0,39–0,46 de automatización, cerca del
+   apoyo administrativo (0,48). Los separa el plazo, no la magnitud: en la
+   oficina el 62% ya es alcanzable sin desarrollos a medida; en dirección, 17%.
 3. **La cadena regional reparte los nodos.** En cables, la capa
    técnica-profesional es 26% en México, 19% en Honduras y 18% en Rep. Dominicana.
 4. **Tener el capital humano no basta.** Rep. Dominicana tiene el stock terciario
@@ -31,7 +32,9 @@ Departamento de Países CID.
 
 ## Método en una línea
 
-Puntajes de exposición de Eloundou et al. (2023) transferidos por
+Rúbricas de exposición y de automatización de Eloundou et al. (2023) —son
+medidas distintas: la primera mide ahorro de tiempo, la segunda si el software
+puede completar la tarea— transferidas por
 O*NET/SOC-2018 → SOC-2010 → CIUO-08 con correspondencias oficiales, cruzados con
 las encuestas de empleo de cinco países y con 2 586 172 vacantes en línea del
 Observatorio Laboral del BID (junio 2022 – mayo 2026).
