@@ -140,11 +140,10 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
     <ol>
       <li><a href="#medida"><span>—</span><span>Cómo se mide</span></a></li>
       <li><a href="#panorama"><span>—</span><span>Los seis países</span></a></li>
-      <li><a href="#h1"><span>01</span><span>El riesgo está en la oficina</span></a></li>
-      <li><a href="#h2"><span>02</span><span>La capa calificada no está a salvo</span></a></li>
-      <li><a href="#h3"><span>03</span><span>La cadena reparte los nodos</span></a></li>
-      <li><a href="#h4"><span>04</span><span>El capital humano no basta</span></a></li>
-      <li><a href="#h5"><span>05</span><span>La demanda de IA se multiplica</span></a></li>
+      <li><a href="#h1"><span>01</span><span>La exposición crece con la calificación</span></a></li>
+      <li><a href="#h3"><span>02</span><span>La cadena reparte los nodos</span></a></li>
+      <li><a href="#h4"><span>03</span><span>El capital humano no basta</span></a></li>
+      <li><a href="#h5"><span>04</span><span>La demanda de IA se multiplica</span></a></li>
     </ol>
     <div class="aparte">
       <ol>
@@ -157,28 +156,24 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
   <main>
 
     <section class="medida" id="medida">
-      <p class="eyebrow">La distinción que decide la lectura</p>
-      <h2>Exposición no es lo mismo que automatización</h2>
+      <p class="eyebrow">La medida</p>
+      <h2>Qué es exactamente β</h2>
       <p style="max-width:68ch;margin:0 0 1.4rem;color:var(--gris)">
-        La rúbrica de Eloundou et al. (2023) etiqueta cada tarea como sin exposición,
-        de exposición <em>directa</em> —el modelo por sí solo reduce el tiempo a la
-        mitad— o de exposición <em>mediada por software</em>. Los puntajes publicados
-        son composiciones de esas etiquetas: α son las directas y β suma a α la mitad
-        de las mediadas, de modo que β contiene a α y nunca puede ser menor. No son
-        dos magnitudes contrapuestas. Y ninguna mide reemplazo: para eso los autores
-        implementan una rúbrica aparte, de automatización.</p>
+        La rúbrica de Eloundou et al. (2023) etiqueta cada tarea de forma excluyente:
+        sin exposición, de exposición <em>directa</em> —el modelo por sí solo reduce el
+        tiempo a la mitad— o <em>mediada por software</em> construido sobre él.</p>
       <dl class="par">
-        <div class="a">
-          <dt>Automatización</dt>
-          <dd>¿Puede el software <em>completar</em> la tarea, y con cuánta supervisión
-            humana? Es la medida relevante para el desplazamiento. Su correlación con
-            α es de solo +0,66: la exposición directa no la aproxima.</dd>
-        </div>
         <div class="b">
-          <dt>α · exposición directa</dt>
-          <dd>Proporción de tareas que un modelo de uso general ya abarata sin
-            desarrollar nada a medida. Leída junto a la automatización, indica qué
-            parte del riesgo está disponible <em>hoy</em> y qué parte exige inversión.</dd>
+          <dt>β · lo que mide</dt>
+          <dd>Las tareas de exposición directa más la mitad de las mediadas por
+            software. No es la parte complementaria de la exposición: es una medida
+            compuesta de ambas.</dd>
+        </div>
+        <div class="a">
+          <dt>lo que no mide</dt>
+          <dd>Ahorro potencial de tiempo, compatible tanto con reemplazar al trabajador
+            como con hacerlo más productivo. Una β alta no dice, por sí sola, que el
+            puesto vaya a desaparecer.</dd>
         </div>
       </dl>
     </section>
@@ -214,7 +209,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
         poco expuesto arrastraban en el promedio. La conversación sobre exposición a la IA
         en la región es, en buena medida, una conversación sobre informalidad.</p>
       <figure>
-        <img src="figuras/W10_comparacion_paises.png"
+        <img src="figuras/W7_comparacion_paises.png"
              alt="Comparación por país de la exposición del empleo total, del empleo formal y de las vacantes en línea.">
         <figcaption>El Salvador no aparece con vacantes porque el Observatorio no las ha
           entregado. La formalidad se define con lo que publica cada encuesta, de modo que
@@ -225,63 +220,39 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
 
     <section class="hallazgo" id="h1">
       <p class="eyebrow">Hallazgo 01</p>
-      <h2>El riesgo de automatización no está en la planta, está en la oficina</h2>
-      <p>El 52% del empleo de los sectores estratégicos está en ocupaciones cuya
-        automatización es inferior a 0,10: ensambladores, operadores de empaque,
-        embaladores. Es trabajo físico que un sistema de lenguaje no alcanza. El riesgo
-        se concentra en la administración de la planta — y la exposición directa por sí
-        sola no lo detecta: gerentes de recursos humanos, compradores y analistas de
-        gestión tienen α por debajo de 0,10 y automatización sobre 0,50.</p>
-      <div class="cifras">
-        <div class="cifra"><b>52%</b><span>del empleo sectorial con automatización &lt; 0,10</span></div>
-        <div class="cifra morado"><b>0,67</b><span>capturistas de datos</span></div>
-        <div class="cifra morado"><b>0,66</b><span>contadores, con α de solo 0,14</span></div>
-        <div class="cifra"><b>+0,66</b><span>correlación entre α y automatización: son medidas distintas</span></div>
-      </div>
-      <figure>
-        <img src="figuras/W4_plano_sustitucion_aumentacion.png"
-             alt="Dispersión de ocupaciones según exposición directa y automatización; la planta se agrupa abajo a la izquierda y las ocupaciones de oficina arriba.">
-        <figcaption>Cada burbuja es una ocupación CIUO-08 de cuatro dígitos con más de
-          1 200 ocupados; el tamaño es proporcional al empleo. Sobre la diagonal, el
-          software puede completar más tarea de la que el modelo abarata por sí solo:
-          exposición que exige inversión.</figcaption>
-      </figure>
-    </section>
-
-    <section class="hallazgo" id="h2">
-      <p class="eyebrow">Hallazgo 02</p>
-      <h2>La capa calificada no está a salvo: su exposición es contingente, no baja</h2>
-      <p>La automatización crece con el nivel de competencia hasta el apoyo
-        administrativo, la capa más automatizable de todas. Técnicos, profesionales y
-        dirección quedan cerca. Lo que los separa no es la magnitud sino el plazo: en la
-        oficina casi dos tercios de esa exposición ya está disponible con herramientas
-        de uso general, mientras en dirección solo el 17% lo está y el resto depende de
-        que alguien desarrolle software específico. Eso concede tiempo, no inmunidad.</p>
+      <h2>La exposición crece con la calificación, y la capa expuesta es la que
+        habilita el escalamiento</h2>
+      <p>El 54% del empleo de los sectores estratégicos está en ocupaciones con β
+        inferior a 0,15: los ensambladores de equipo eléctrico y electrónico, con 224 mil
+        ocupados en la región, tienen β=0,11. Pero el gradiente por capa ocupacional es
+        nítido, y tiene una consecuencia incómoda: <strong>la capa expuesta no es la base
+        operativa sino la calificada</strong>, que es la misma que la evidencia
+        econométrica identifica como determinante del escalamiento exportador.</p>
       <div class="tabla">
         <table>
-          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">Automatización y parte alcanzable sin inversión</caption>
-          <thead><tr><th scope="col">Capa</th><th scope="col">α</th><th scope="col">Automatización</th><th scope="col">Sin inversión</th><th scope="col">Ocupados</th></tr></thead>
+          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">β por capa ocupacional, sectores estratégicos</caption>
+          <thead><tr><th scope="col">Capa</th><th scope="col">β</th><th scope="col">Ocupados</th></tr></thead>
           <tbody>
-            <tr><td>Operadores de planta</td><td>0,05</td><td>0,09</td><td>56%</td><td>384 815</td></tr>
-            <tr><td>Ocupaciones elementales</td><td>0,09</td><td>0,10</td><td>86%</td><td>58 966</td></tr>
-            <tr><td>Oficios y artesanía</td><td>0,11</td><td>0,19</td><td>60%</td><td>28 049</td></tr>
-            <tr><td>Técnicos</td><td>0,17</td><td>0,39</td><td>42%</td><td>130 557</td></tr>
-            <tr><td>Dirección y gerencia</td><td>0,07</td><td>0,44</td><td><strong>17%</strong></td><td>37 164</td></tr>
-            <tr><td>Profesionales e ingeniería</td><td>0,24</td><td>0,46</td><td>52%</td><td>56 099</td></tr>
-            <tr><td><strong>Apoyo administrativo</strong></td><td>0,30</td><td><strong>0,48</strong></td><td><strong>62%</strong></td><td>60 399</td></tr>
+            <tr><td>Ocupaciones elementales</td><td>0,10</td><td>58 966</td></tr>
+            <tr><td>Operadores de planta</td><td>0,10</td><td>384 815</td></tr>
+            <tr><td>Oficios y artesanía</td><td>0,21</td><td>28 049</td></tr>
+            <tr><td>Servicios y ventas</td><td>0,34</td><td>10 773</td></tr>
+            <tr><td>Técnicos</td><td>0,41</td><td>130 557</td></tr>
+            <tr><td>Dirección y gerencia</td><td>0,45</td><td>37 164</td></tr>
+            <tr><td>Apoyo administrativo</td><td>0,48</td><td>60 399</td></tr>
+            <tr><td><strong>Profesionales e ingeniería</strong></td><td><strong>0,56</strong></td><td>56 099</td></tr>
           </tbody>
         </table>
       </div>
-      <figure>
-        <img src="figuras/W5_escalera_calificacion.png"
-             alt="Gráfico de mancuernas con la exposición directa y la automatización por capa ocupacional.">
-        <figcaption>Promedios ponderados por empleo sobre el agregado de los tres
-          sectores estratégicos en los cinco países.</figcaption>
-      </figure>
+      <p>Las ocupaciones individuales más expuestas combinan oficina y perfil técnico:
+        capturistas de datos (β=0,83), técnicos de operaciones de TIC (0,74), ingenieros
+        electrónicos (0,65) y analistas de sistemas (0,61). Escalar hacia eslabones de
+        mayor valor agregado significa, en estos datos, mover trabajadores hacia
+        ocupaciones más expuestas, no menos.</p>
     </section>
 
-    <section class="hallazgo" id="h3">
-      <p class="eyebrow">Hallazgo 03</p>
+        <section class="hallazgo" id="h3">
+      <p class="eyebrow">Hallazgo 02</p>
       <h2>La cadena regional de valor reparte los nodos, y se ve en las ocupaciones</h2>
       <p>La Nota Técnica muestra que cables constituye una cadena regional y los
         dispositivos médicos un enclave extrarregional. Los datos ocupacionales muestran
@@ -294,7 +265,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
         <div class="cifra"><b>26% / 13%</b><span>dispositivos médicos: Costa Rica frente a Rep. Dominicana</span></div>
       </div>
       <figure>
-        <img src="figuras/W6_cadena_regional_capas.png"
+        <img src="figuras/W4_cadena_regional_capas.png"
              alt="Barras apiladas al 100% con la composición ocupacional de cables y de dispositivos médicos por país.">
         <figcaption>Solo se muestran combinaciones país-sector con más de 5 000 ocupados.
           Último año disponible de cada país.</figcaption>
@@ -302,7 +273,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
     </section>
 
     <section class="hallazgo" id="h4">
-      <p class="eyebrow">Hallazgo 04</p>
+      <p class="eyebrow">Hallazgo 03</p>
       <h2>Tener el capital humano no basta: hay que capturar las funciones que lo usan</h2>
       <p>Si la disponibilidad nacional de terciarios fuera suficiente, los sectores
         deberían emplear capa técnica en una proporción parecida a la del stock del país.
@@ -317,7 +288,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
         <div class="cifra verde"><b>26,4%</b><span>capa técnica en su mismo sector</span></div>
       </div>
       <figure>
-        <img src="figuras/W8_brecha_terciaria_capa.png"
+        <img src="figuras/W6_brecha_terciaria_capa.png"
              alt="Dispersión del stock de educación terciaria del país frente a la capa técnica-profesional que emplea cada sector, con una diagonal de referencia.">
         <figcaption>Sobre la diagonal, el sector absorbe la terciaria del país en la
           misma proporción en que la economía la tiene.</figcaption>
@@ -325,7 +296,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
     </section>
 
     <section class="hallazgo" id="h5">
-      <p class="eyebrow">Hallazgo 05</p>
+      <p class="eyebrow">Hallazgo 04</p>
       <h2>La demanda de habilidades de IA se multiplica por 2,7 en cuatro años</h2>
       <p>Los campos de habilidades que acompañan a cada vacante no sirven para medir
         requisitos, así que se procesó el texto completo de 2,5 millones de anuncios con
@@ -340,7 +311,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
         <div class="cifra"><b>20% / 8,5%</b><span>inglés: capa técnica frente a planta, la mayor brecha del diccionario</span></div>
       </div>
       <figure>
-        <img src="figuras/W9_habilidades_texto.png"
+        <img src="figuras/W8_habilidades_texto.png"
              alt="Panel izquierdo con las habilidades que separan a la capa técnica de la planta; panel derecho con la evolución normalizada de cada categoría entre 2022 y 2026.">
         <figcaption>El panel (b) normaliza cada serie por el largo medio de la
           descripción del año. La serie de control plana es lo que valida que el resto
@@ -366,7 +337,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
               operadores de empaque, con α y β iguales a cero.</figcaption>
           </figure>
           <figure>
-            <img src="figuras/W7_regional.png" alt="Exposición por nivel educativo y sexo en seis países.">
+            <img src="figuras/W5_regional.png" alt="Exposición por nivel educativo y sexo en seis países.">
             <figcaption>El gradiente educativo y de género es idéntico en toda la región.</figcaption>
           </figure>
           <figure>
