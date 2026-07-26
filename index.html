@@ -139,6 +139,7 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
   <nav aria-label="Hallazgos">
     <ol>
       <li><a href="#medida"><span>—</span><span>Cómo se mide</span></a></li>
+      <li><a href="#panorama"><span>—</span><span>Los seis países</span></a></li>
       <li><a href="#h1"><span>01</span><span>El riesgo está en la oficina</span></a></li>
       <li><a href="#h2"><span>02</span><span>La capa calificada no está a salvo</span></a></li>
       <li><a href="#h3"><span>03</span><span>La cadena reparte los nodos</span></a></li>
@@ -180,6 +181,46 @@ thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
             parte del riesgo está disponible <em>hoy</em> y qué parte exige inversión.</dd>
         </div>
       </dl>
+    </section>
+
+    <section class="hallazgo" id="panorama">
+      <p class="eyebrow">Panorama</p>
+      <h2>Los seis países en las dos fuentes, con una sola medida</h2>
+      <p>La exposición del empleo total va de 0,209 en Guatemala a 0,285 en México
+        —un rango que invita a ordenar a los países— y la de las vacantes en línea es
+        sistemáticamente superior, entre 0,422 y 0,459. La clave está en el punto
+        intermedio: <strong>la exposición del empleo formal va de 0,303 a 0,347</strong>,
+        un rango de apenas cuatro centésimas. El empleo formal de los seis países está
+        expuesto casi por igual.</p>
+      <div class="tabla">
+        <table>
+          <caption class="eyebrow" style="text-align:left;padding-bottom:.6rem;text-transform:none;letter-spacing:.04em">Exposición β por país, último año con encuesta</caption>
+          <thead><tr><th scope="col">País</th><th scope="col">Encuesta</th><th scope="col">Empleo total</th><th scope="col">Formal</th><th scope="col">Vacantes</th><th scope="col">Brecha vs formal</th></tr></thead>
+          <tbody>
+            <tr><td>México</td><td>ENOE 2025</td><td>0,285</td><td>0,347</td><td>0,446</td><td>+0,10</td></tr>
+            <tr><td>Costa Rica</td><td>ECE 2025</td><td>0,283</td><td>0,328</td><td>0,446</td><td>+0,12</td></tr>
+            <tr><td>Rep. Dominicana</td><td>ENCFT 2024</td><td>0,263</td><td>0,328</td><td>0,430</td><td>+0,10</td></tr>
+            <tr><td>El Salvador</td><td>EHPM 2025</td><td>0,243</td><td>0,303</td><td>—</td><td>—</td></tr>
+            <tr><td>Honduras</td><td>EPHPM 2025</td><td>0,237</td><td>0,325</td><td>0,459</td><td>+0,13</td></tr>
+            <tr><td>Guatemala</td><td>ENCOVI 2023</td><td>0,209</td><td>0,327</td><td>0,422</td><td>+0,10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La brecha entre vacantes y empleo total correlaciona <strong>+0,89</strong> con la
+        informalidad de cada país. Restringida al empleo formal, esa correlación
+        <strong>desaparece (−0,01)</strong> y la brecha se comprime a entre +0,10 y +0,13,
+        sin ordenamiento reconocible. Lo que separaba a Guatemala y Honduras de México y
+        Costa Rica no era la naturaleza de su empleo formal, sino cuánto empleo informal
+        poco expuesto arrastraban en el promedio. La conversación sobre exposición a la IA
+        en la región es, en buena medida, una conversación sobre informalidad.</p>
+      <figure>
+        <img src="figuras/W10_comparacion_paises.png"
+             alt="Comparación por país de la exposición del empleo total, del empleo formal y de las vacantes en línea.">
+        <figcaption>El Salvador no aparece con vacantes porque el Observatorio no las ha
+          entregado. La formalidad se define con lo que publica cada encuesta, de modo que
+          sus niveles no son estrictamente comparables entre países, aunque sí lo es la
+          posición relativa de las tres medidas dentro de cada uno.</figcaption>
+      </figure>
     </section>
 
     <section class="hallazgo" id="h1">

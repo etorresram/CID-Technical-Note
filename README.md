@@ -14,6 +14,23 @@ Departamento de Países CID.
 | `figuras/` | Las nueve figuras del cuerpo (W1–W9) y las dos del anexo (A1–A2). |
 | `datos/` | Cuadros agregados que respaldan cada figura. Sin microdatos. |
 
+## El panorama
+
+Con una sola medida —la β canónica CIUO-08— y las dos fuentes, seis países:
+
+| País | Encuesta | Empleo total | Formal | Vacantes |
+|---|---|---|---|---|
+| México | ENOE 2025 | 0,285 | 0,347 | 0,446 |
+| Costa Rica | ECE 2025 | 0,283 | 0,328 | 0,446 |
+| Rep. Dominicana | ENCFT 2024 | 0,263 | 0,328 | 0,430 |
+| El Salvador | EHPM 2025 | 0,243 | 0,303 | — |
+| Honduras | EPHPM 2025 | 0,237 | 0,325 | 0,459 |
+| Guatemala | ENCOVI 2023 | 0,209 | 0,327 | 0,422 |
+
+La brecha entre vacantes y empleo total correlaciona **+0,89** con la
+informalidad; restringida al empleo formal **desaparece (−0,01)**. El empleo
+formal de los seis países está expuesto casi por igual.
+
 ## Los cinco hallazgos
 
 1. **El riesgo de automatización está en la oficina, no en la planta.** El 56%
