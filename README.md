@@ -14,6 +14,18 @@ Departamento de Países CID.
 | `figuras/` | Las nueve figuras del cuerpo (W1–W9) y las dos del anexo (A1–A2). |
 | `datos/` | Cuadros agregados que respaldan cada figura. Sin microdatos. |
 
+### Cobertura de países en los cuadros
+
+| Cuadro | Países | Por qué faltan los demás |
+|---|---|---|
+| `comparacion_paises_*.csv` | los 6 con encuesta | El Salvador sin vacantes (no entregadas); Panamá sin ninguna fuente |
+| `capas_*.csv` | MEX, CRI, DOM, HND, SLV | Guatemala publica la ocupación a 2 dígitos. México aporta el 82% del empleo |
+| `formalidad_pais_anual.csv` | los 6 | — |
+| `habilidades_*.csv` | los 5 con vacantes | El Salvador y Panamá no tienen vacantes |
+| `intensidad_demanda_*.csv` | los 5 con vacantes | ídem; el panel de tendencia solo los 3 con serie completa |
+| `escalamiento_oferta.csv` | MEX y CRI | son las dos únicas encuestas con periodicidad trimestral |
+| `escalamiento_demanda.csv` | los 5 con vacantes | El Salvador y Panamá no tienen vacantes |
+
 ## El panorama
 
 Con una sola medida —la β canónica CIUO-08— y las dos fuentes, seis países:
