@@ -10,7 +10,8 @@ Departamento de Países CID.
 
 | | |
 |---|---|
-| `index.html` | La presentación. Estática y sin dependencias externas. |
+| `index.html` | La página. Estática y sin dependencias externas. |
+| `Presentacion_CID_IA_Sectores.pptx` | La presentación para la reunión: 18 láminas en lenguaje llano. |
 | `figuras/` | Las nueve figuras del cuerpo (W1–W9) y las dos del anexo (A1–A2). |
 | `datos/` | Cuadros agregados que respaldan cada figura. Sin microdatos. |
 
